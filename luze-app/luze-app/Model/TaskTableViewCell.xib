@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="TaskTableViewCell" customModule="luze_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K8M-CI-iti">
+                        <rect key="frame" x="11" y="10" width="48" height="40"/>
+                        <color key="tintColor" white="0.92930953270000005" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY9-nu-rpT">
+                        <rect key="frame" x="67" y="21" width="34" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.92930953270000005" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaskDescription" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBT-G4-H90">
+                        <rect key="frame" x="109" y="3" width="171" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="14p-5P-N6H"/>
+                            <constraint firstAttribute="width" constant="171" id="2uh-Lp-PdT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.92930953270000005" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWZ-8N-FXF">
+                        <rect key="frame" x="288" y="19" width="24" height="22"/>
+                        <color key="tintColor" white="0.92930953270000005" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal">
+                            <color key="titleColor" name="palette-4"/>
+                            <imageReference key="image" image="square" catalog="system" symbolScale="large"/>
+                        </state>
+                    </button>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="4E1-6f-YjF"/>
+                <color key="backgroundColor" name="palette-4"/>
+                <constraints>
+                    <constraint firstItem="BY9-nu-rpT" firstAttribute="leading" secondItem="K8M-CI-iti" secondAttribute="trailing" constant="8" symbolic="YES" id="Chk-eq-QJ0"/>
+                    <constraint firstItem="K8M-CI-iti" firstAttribute="leading" secondItem="4E1-6f-YjF" secondAttribute="leading" constant="11" id="JXr-Jf-X1w"/>
+                    <constraint firstItem="BY9-nu-rpT" firstAttribute="centerY" secondItem="K8M-CI-iti" secondAttribute="centerY" id="K0I-XT-17d"/>
+                    <constraint firstItem="4E1-6f-YjF" firstAttribute="trailing" secondItem="AWZ-8N-FXF" secondAttribute="trailing" constant="8" id="ODU-Em-yOi"/>
+                    <constraint firstItem="ZBT-G4-H90" firstAttribute="centerY" secondItem="BY9-nu-rpT" secondAttribute="centerY" id="Otg-DU-j1p"/>
+                    <constraint firstItem="K8M-CI-iti" firstAttribute="top" secondItem="4E1-6f-YjF" secondAttribute="top" constant="10" id="PPb-1k-ZI3"/>
+                    <constraint firstItem="ZBT-G4-H90" firstAttribute="leading" secondItem="BY9-nu-rpT" secondAttribute="trailing" constant="8" symbolic="YES" id="QB1-bd-tbN"/>
+                    <constraint firstItem="4E1-6f-YjF" firstAttribute="bottom" secondItem="K8M-CI-iti" secondAttribute="bottom" constant="10" id="acJ-Tb-KPO"/>
+                    <constraint firstItem="AWZ-8N-FXF" firstAttribute="leading" secondItem="ZBT-G4-H90" secondAttribute="trailing" constant="8" symbolic="YES" id="ar0-Xb-qEp"/>
+                    <constraint firstItem="AWZ-8N-FXF" firstAttribute="centerY" secondItem="ZBT-G4-H90" secondAttribute="centerY" id="gjG-8R-9Bq"/>
+                    <constraint firstItem="ZBT-G4-H90" firstAttribute="top" secondItem="4E1-6f-YjF" secondAttribute="top" constant="3" id="l1Y-nY-Lj3"/>
+                    <constraint firstItem="4E1-6f-YjF" firstAttribute="bottom" secondItem="ZBT-G4-H90" secondAttribute="bottom" constant="3" id="sho-j1-qvH"/>
+                    <constraint firstItem="K8M-CI-iti" firstAttribute="centerY" secondItem="4E1-6f-YjF" secondAttribute="centerY" id="uAQ-4b-5S2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="completedBtn" destination="AWZ-8N-FXF" id="mYw-xV-PrJ"/>
+                <outlet property="iconView" destination="K8M-CI-iti" id="4Uo-Tr-f2e"/>
+                <outlet property="taskDescriptionLabel" destination="ZBT-G4-H90" id="amy-Gb-9pa"/>
+                <outlet property="timeLabel" destination="BY9-nu-rpT" id="3A6-5W-Q0B"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="58.928571428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <namedColor name="palette-4">
+            <color red="1" green="0.68199998140335083" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
