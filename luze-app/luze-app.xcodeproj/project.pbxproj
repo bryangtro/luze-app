@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E1A4A7B264B4FB900CAB7F6 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A4A7A264B4FB900CAB7F6 /* CalendarCell.swift */; };
+		0E1A4A80264B4FDD00CAB7F6 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1A4A7F264B4FDD00CAB7F6 /* CalendarHelper.swift */; };
+		0E8CF2AA26428F57000D1B0D /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF2A926428F57000D1B0D /* MusicPlayer.swift */; };
+		0EA2B1F1264515DE00B3A9F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2B1F0264515DE00B3A9F9 /* HomeViewController.swift */; };
+		0EA6BC3B2650D89A000A3FB4 /* DateJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6BC3A2650D89A000A3FB4 /* DateJumpViewController.swift */; };
+		0ED385602646A31B00FD8F8A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3855F2646A31B00FD8F8A /* MenuViewController.swift */; };
+		0ED385652646B39600FD8F8A /* SlideInTransision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED385642646B39600FD8F8A /* SlideInTransision.swift */; };
+		0ED3856A2646CA2000FD8F8A /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED385692646CA2000FD8F8A /* StatisticsViewController.swift */; };
+		5254436D26556D7E0099B442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254436C26556D7E0099B442 /* ContentView.swift */; };
+		5254437326556F550099B442 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 5254437226556F550099B442 /* SwiftUICharts */; };
+		52A0382A26428A41005A2547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0382926428A41005A2547 /* AppDelegate.swift */; };
+		52A0382C26428A41005A2547 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0382B26428A41005A2547 /* SceneDelegate.swift */; };
+		52A0382E26428A41005A2547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0382D26428A41005A2547 /* ViewController.swift */; };
+		52A0383126428A41005A2547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A0382F26428A41005A2547 /* Main.storyboard */; };
+		52A0383626428A44005A2547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A0383426428A44005A2547 /* LaunchScreen.storyboard */; };
+		52A0384126428A44005A2547 /* luze_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0384026428A44005A2547 /* luze_appTests.swift */; };
+		52A0384C26428A45005A2547 /* luze_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0384B26428A45005A2547 /* luze_appUITests.swift */; };
+		52A0386026428CD5005A2547 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0385F26428CD5005A2547 /* User.swift */; };
+		52A0386826428CFA005A2547 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0386726428CFA005A2547 /* Helper.swift */; };
+		52A038822643B97C005A2547 /* UserRegistrationOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A038812643B97B005A2547 /* UserRegistrationOneViewController.swift */; };
+		52A0388F264BB664005A2547 /* UserRegistrationTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0388E264BB664005A2547 /* UserRegistrationTwoViewController.swift */; };
+		52A03894264BBFBA005A2547 /* UserRegistrationThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A03893264BBFBA005A2547 /* UserRegistrationThreeViewController.swift */; };
+		52A03899264BD54A005A2547 /* UserRegistrationFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A03898264BD54A005A2547 /* UserRegistrationFourViewController.swift */; };
+		52A0389E264BDE02005A2547 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0389D264BDE02005A2547 /* WelcomeViewController.swift */; };
+		943D28CF265277940087184A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943D28CE265277940087184A /* Assets.xcassets */; };
+		943D28F226527C990087184A /* TaskEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D28F126527C990087184A /* TaskEditViewController.swift */; };
+		943D28F726527D320087184A /* TaskAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D28F626527D320087184A /* TaskAddViewController.swift */; };
+		9453E57F26539F7100ED29EA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453E57E26539F7100ED29EA /* Task.swift */; };
+		9453E59D2653FDED00ED29EA /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453E59B2653FDED00ED29EA /* TaskTableViewCell.swift */; };
+		9453E59E2653FDEE00ED29EA /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9453E59C2653FDED00ED29EA /* TaskTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52A0383D26428A44005A2547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A0381E26428A41005A2547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A0382526428A41005A2547;
+			remoteInfo = "luze-app";
+		};
+		52A0384826428A45005A2547 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A0381E26428A41005A2547 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A0382526428A41005A2547;
+			remoteInfo = "luze-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E1A4A7A264B4FB900CAB7F6 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		0E1A4A7F264B4FDD00CAB7F6 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		0E8CF2A926428F57000D1B0D /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		0EA2B1F0264515DE00B3A9F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0EA6BC3A2650D89A000A3FB4 /* DateJumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateJumpViewController.swift; sourceTree = "<group>"; };
+		0ED3855F2646A31B00FD8F8A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0ED385642646B39600FD8F8A /* SlideInTransision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransision.swift; sourceTree = "<group>"; };
+		0ED385692646CA2000FD8F8A /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		5254436C26556D7E0099B442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52A0382626428A41005A2547 /* luze-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "luze-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A0382926428A41005A2547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52A0382B26428A41005A2547 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52A0382D26428A41005A2547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52A0383026428A41005A2547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52A0383526428A44005A2547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52A0383726428A44005A2547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A0383C26428A44005A2547 /* luze-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "luze-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A0384026428A44005A2547 /* luze_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = luze_appTests.swift; sourceTree = "<group>"; };
+		52A0384226428A45005A2547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A0384726428A45005A2547 /* luze-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "luze-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A0384B26428A45005A2547 /* luze_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = luze_appUITests.swift; sourceTree = "<group>"; };
+		52A0384D26428A45005A2547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A0385F26428CD5005A2547 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		52A0386726428CFA005A2547 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		52A038812643B97B005A2547 /* UserRegistrationOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationOneViewController.swift; sourceTree = "<group>"; };
+		52A0388E264BB664005A2547 /* UserRegistrationTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationTwoViewController.swift; sourceTree = "<group>"; };
+		52A03893264BBFBA005A2547 /* UserRegistrationThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationThreeViewController.swift; sourceTree = "<group>"; };
+		52A03898264BD54A005A2547 /* UserRegistrationFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationFourViewController.swift; sourceTree = "<group>"; };
+		52A0389D264BDE02005A2547 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		943D28CE265277940087184A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		943D28F126527C990087184A /* TaskEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditViewController.swift; sourceTree = "<group>"; };
+		943D28F626527D320087184A /* TaskAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAddViewController.swift; sourceTree = "<group>"; };
+		9453E57E26539F7100ED29EA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9453E59B2653FDED00ED29EA /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		9453E59C2653FDED00ED29EA /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A0382326428A41005A2547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5254437326556F550099B442 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A0383926428A44005A2547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A0384426428A45005A2547 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52A0381D26428A41005A2547 = {
+			isa = PBXGroup;
+			children = (
+				52A0382826428A41005A2547 /* luze-app */,
+				52A0383F26428A44005A2547 /* luze-appTests */,
+				52A0384A26428A45005A2547 /* luze-appUITests */,
+				52A0382726428A41005A2547 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52A0382726428A41005A2547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52A0382626428A41005A2547 /* luze-app.app */,
+				52A0383C26428A44005A2547 /* luze-appTests.xctest */,
+				52A0384726428A45005A2547 /* luze-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52A0382826428A41005A2547 /* luze-app */ = {
+			isa = PBXGroup;
+			children = (
+				943D28CE265277940087184A /* Assets.xcassets */,
+				52A0385C26428B46005A2547 /* Model */,
+				52A0385D26428B5C005A2547 /* View */,
+				52A0385E26428B60005A2547 /* Controller */,
+				52A0382926428A41005A2547 /* AppDelegate.swift */,
+				52A0382B26428A41005A2547 /* SceneDelegate.swift */,
+				52A0383426428A44005A2547 /* LaunchScreen.storyboard */,
+				52A0383726428A44005A2547 /* Info.plist */,
+			);
+			path = "luze-app";
+			sourceTree = "<group>";
+		};
+		52A0383F26428A44005A2547 /* luze-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				52A0384026428A44005A2547 /* luze_appTests.swift */,
+				52A0384226428A45005A2547 /* Info.plist */,
+			);
+			path = "luze-appTests";
+			sourceTree = "<group>";
+		};
+		52A0384A26428A45005A2547 /* luze-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52A0384B26428A45005A2547 /* luze_appUITests.swift */,
+				52A0384D26428A45005A2547 /* Info.plist */,
+			);
+			path = "luze-appUITests";
+			sourceTree = "<group>";
+		};
+		52A0385C26428B46005A2547 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52A0385F26428CD5005A2547 /* User.swift */,
+				0E8CF2A926428F57000D1B0D /* MusicPlayer.swift */,
+				0E1A4A7A264B4FB900CAB7F6 /* CalendarCell.swift */,
+				52A0386726428CFA005A2547 /* Helper.swift */,
+				0E1A4A7F264B4FDD00CAB7F6 /* CalendarHelper.swift */,
+				0ED385642646B39600FD8F8A /* SlideInTransision.swift */,
+				9453E57E26539F7100ED29EA /* Task.swift */,
+				9453E59B2653FDED00ED29EA /* TaskTableViewCell.swift */,
+				9453E59C2653FDED00ED29EA /* TaskTableViewCell.xib */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52A0385D26428B5C005A2547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A0382F26428A41005A2547 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52A0385E26428B60005A2547 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52A0382D26428A41005A2547 /* ViewController.swift */,
+				0EA2B1F0264515DE00B3A9F9 /* HomeViewController.swift */,
+				0EA6BC3A2650D89A000A3FB4 /* DateJumpViewController.swift */,
+				0ED3855F2646A31B00FD8F8A /* MenuViewController.swift */,
+				0ED385692646CA2000FD8F8A /* StatisticsViewController.swift */,
+				52A038812643B97B005A2547 /* UserRegistrationOneViewController.swift */,
+				52A0388E264BB664005A2547 /* UserRegistrationTwoViewController.swift */,
+				52A03893264BBFBA005A2547 /* UserRegistrationThreeViewController.swift */,
+				52A03898264BD54A005A2547 /* UserRegistrationFourViewController.swift */,
+				52A0389D264BDE02005A2547 /* WelcomeViewController.swift */,
+				943D28F126527C990087184A /* TaskEditViewController.swift */,
+				943D28F626527D320087184A /* TaskAddViewController.swift */,
+				5254436C26556D7E0099B442 /* ContentView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52A0382526428A41005A2547 /* luze-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A0385026428A45005A2547 /* Build configuration list for PBXNativeTarget "luze-app" */;
+			buildPhases = (
+				52A0382226428A41005A2547 /* Sources */,
+				52A0382326428A41005A2547 /* Frameworks */,
+				52A0382426428A41005A2547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "luze-app";
+			packageProductDependencies = (
+				5254437226556F550099B442 /* SwiftUICharts */,
+			);
+			productName = "luze-app";
+			productReference = 52A0382626428A41005A2547 /* luze-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52A0383B26428A44005A2547 /* luze-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A0385326428A45005A2547 /* Build configuration list for PBXNativeTarget "luze-appTests" */;
+			buildPhases = (
+				52A0383826428A44005A2547 /* Sources */,
+				52A0383926428A44005A2547 /* Frameworks */,
+				52A0383A26428A44005A2547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A0383E26428A44005A2547 /* PBXTargetDependency */,
+			);
+			name = "luze-appTests";
+			productName = "luze-appTests";
+			productReference = 52A0383C26428A44005A2547 /* luze-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52A0384626428A45005A2547 /* luze-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A0385626428A45005A2547 /* Build configuration list for PBXNativeTarget "luze-appUITests" */;
+			buildPhases = (
+				52A0384326428A45005A2547 /* Sources */,
+				52A0384426428A45005A2547 /* Frameworks */,
+				52A0384526428A45005A2547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A0384926428A45005A2547 /* PBXTargetDependency */,
+			);
+			name = "luze-appUITests";
+			productName = "luze-appUITests";
+			productReference = 52A0384726428A45005A2547 /* luze-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52A0381E26428A41005A2547 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					52A0382526428A41005A2547 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					52A0383B26428A44005A2547 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 52A0382526428A41005A2547;
+					};
+					52A0384626428A45005A2547 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 52A0382526428A41005A2547;
+					};
+				};
+			};
+			buildConfigurationList = 52A0382126428A41005A2547 /* Build configuration list for PBXProject "luze-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52A0381D26428A41005A2547;
+			packageReferences = (
+				5254437126556F550099B442 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = 52A0382726428A41005A2547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52A0382526428A41005A2547 /* luze-app */,
+				52A0383B26428A44005A2547 /* luze-appTests */,
+				52A0384626428A45005A2547 /* luze-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52A0382426428A41005A2547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9453E59E2653FDEE00ED29EA /* TaskTableViewCell.xib in Resources */,
+				52A0383626428A44005A2547 /* LaunchScreen.storyboard in Resources */,
+				943D28CF265277940087184A /* Assets.xcassets in Resources */,
+				52A0383126428A41005A2547 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A0383A26428A44005A2547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A0384526428A45005A2547 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A0382226428A41005A2547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A0386026428CD5005A2547 /* User.swift in Sources */,
+				52A0382E26428A41005A2547 /* ViewController.swift in Sources */,
+				52A0389E264BDE02005A2547 /* WelcomeViewController.swift in Sources */,
+				9453E57F26539F7100ED29EA /* Task.swift in Sources */,
+				0E8CF2AA26428F57000D1B0D /* MusicPlayer.swift in Sources */,
+				0EA2B1F1264515DE00B3A9F9 /* HomeViewController.swift in Sources */,
+				0ED385602646A31B00FD8F8A /* MenuViewController.swift in Sources */,
+				0ED3856A2646CA2000FD8F8A /* StatisticsViewController.swift in Sources */,
+				52A0386826428CFA005A2547 /* Helper.swift in Sources */,
+				0E1A4A80264B4FDD00CAB7F6 /* CalendarHelper.swift in Sources */,
+				0E1A4A7B264B4FB900CAB7F6 /* CalendarCell.swift in Sources */,
+				0ED385652646B39600FD8F8A /* SlideInTransision.swift in Sources */,
+				9453E59D2653FDED00ED29EA /* TaskTableViewCell.swift in Sources */,
+				52A03894264BBFBA005A2547 /* UserRegistrationThreeViewController.swift in Sources */,
+				0EA6BC3B2650D89A000A3FB4 /* DateJumpViewController.swift in Sources */,
+				943D28F226527C990087184A /* TaskEditViewController.swift in Sources */,
+				52A0382A26428A41005A2547 /* AppDelegate.swift in Sources */,
+				5254436D26556D7E0099B442 /* ContentView.swift in Sources */,
+				52A03899264BD54A005A2547 /* UserRegistrationFourViewController.swift in Sources */,
+				52A0388F264BB664005A2547 /* UserRegistrationTwoViewController.swift in Sources */,
+				52A038822643B97C005A2547 /* UserRegistrationOneViewController.swift in Sources */,
+				52A0382C26428A41005A2547 /* SceneDelegate.swift in Sources */,
+				943D28F726527D320087184A /* TaskAddViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A0383826428A44005A2547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A0384126428A44005A2547 /* luze_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A0384326428A45005A2547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A0384C26428A45005A2547 /* luze_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52A0383E26428A44005A2547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A0382526428A41005A2547 /* luze-app */;
+			targetProxy = 52A0383D26428A44005A2547 /* PBXContainerItemProxy */;
+		};
+		52A0384926428A45005A2547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A0382526428A41005A2547 /* luze-app */;
+			targetProxy = 52A0384826428A45005A2547 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52A0382F26428A41005A2547 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A0383026428A41005A2547 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52A0383426428A44005A2547 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52A0383526428A44005A2547 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52A0384E26428A45005A2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52A0384F26428A45005A2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52A0385126428A45005A2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "luze-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Luze.luze-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52A0385226428A45005A2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "luze-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Luze.luze-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52A0385426428A45005A2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "luze-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Luze.luze-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/luze-app.app/luze-app";
+			};
+			name = Debug;
+		};
+		52A0385526428A45005A2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "luze-appTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Luze.luze-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/luze-app.app/luze-app";
+			};
+			name = Release;
+		};
+		52A0385726428A45005A2547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "luze-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Luze.luze-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "luze-app";
+			};
+			name = Debug;
+		};
+		52A0385826428A45005A2547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "luze-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Luze.luze-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "luze-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52A0382126428A41005A2547 /* Build configuration list for PBXProject "luze-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A0384E26428A45005A2547 /* Debug */,
+				52A0384F26428A45005A2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A0385026428A45005A2547 /* Build configuration list for PBXNativeTarget "luze-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A0385126428A45005A2547 /* Debug */,
+				52A0385226428A45005A2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A0385326428A45005A2547 /* Build configuration list for PBXNativeTarget "luze-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A0385426428A45005A2547 /* Debug */,
+				52A0385526428A45005A2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A0385626428A45005A2547 /* Build configuration list for PBXNativeTarget "luze-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A0385726428A45005A2547 /* Debug */,
+				52A0385826428A45005A2547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5254437126556F550099B442 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5254437226556F550099B442 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5254437126556F550099B442 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52A0381E26428A41005A2547 /* Project object */;
+}
